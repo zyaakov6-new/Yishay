@@ -14,10 +14,10 @@
   <!-- NAVIGATION -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <div class="nav-brand">
-        <span class="nav-star">✡</span>
-        <span>בית כנסת ישי</span>
-      </div>
+      <a href="#home" class="nav-brand">
+        <span class="nav-brand-main">בית כנסת ישי</span>
+        <span class="nav-brand-sub">מזכרת בתיה</span>
+      </a>
       <ul class="nav-links">
         <li><a href="#home">בית</a></li>
         <li><a href="#times">זמני תפילה</a></li>
@@ -44,40 +44,10 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-bg-layers">
-      <div class="layer layer1"></div>
-      <div class="layer layer2"></div>
-      <div class="layer layer3"></div>
-    </div>
+    <div class="hero-bg"></div>
 
-    <div class="hero-menorah-wrap">
-      <svg class="menorah-svg" viewBox="0 0 320 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#ffd700" stop-opacity="0.6"/>
-            <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
-          </radialGradient>
-          <filter id="blur1">
-            <feGaussianBlur stdDeviation="4"/>
-          </filter>
-        </defs>
-        <!-- Glow halos -->
-        <ellipse cx="160" cy="44" rx="22" ry="28" fill="url(#glow1)" filter="url(#blur1)"/>
-        <ellipse cx="100" cy="64" rx="18" ry="22" fill="url(#glow1)" filter="url(#blur1)" opacity="0.7"/>
-        <ellipse cx="220" cy="64" rx="18" ry="22" fill="url(#glow1)" filter="url(#blur1)" opacity="0.7"/>
-        <ellipse cx="50" cy="86" rx="15" ry="19" fill="url(#glow1)" filter="url(#blur1)" opacity="0.55"/>
-        <ellipse cx="270" cy="86" rx="15" ry="19" fill="url(#glow1)" filter="url(#blur1)" opacity="0.55"/>
-        <ellipse cx="16" cy="112" rx="12" ry="15" fill="url(#glow1)" filter="url(#blur1)" opacity="0.4"/>
-        <ellipse cx="304" cy="112" rx="12" ry="15" fill="url(#glow1)" filter="url(#blur1)" opacity="0.4"/>
-        <!-- Flames -->
-        <path d="M160 34 Q154 16 160 4 Q166 16 160 34Z" fill="#ffd700" opacity="0.95" class="flame"/>
-        <path d="M100 54 Q95 38 100 27 Q105 38 100 54Z" fill="#ffcc44" opacity="0.88" class="flame"/>
-        <path d="M220 54 Q215 38 220 27 Q225 38 220 54Z" fill="#ffcc44" opacity="0.88" class="flame"/>
-        <path d="M50 76 Q46 61 50 52 Q54 61 50 76Z" fill="#ffaa22" opacity="0.8" class="flame"/>
-        <path d="M270 76 Q266 61 270 52 Q274 61 270 76Z" fill="#ffaa22" opacity="0.8" class="flame"/>
-        <path d="M16 102 Q12 88 16 80 Q20 88 16 102Z" fill="#ff9900" opacity="0.72" class="flame"/>
-        <path d="M304 102 Q300 88 304 80 Q308 88 304 102Z" fill="#ff9900" opacity="0.72" class="flame"/>
-        <!-- Candle tops -->
+    <div class="hero-menorah-bg" aria-hidden="true">
+      <svg viewBox="0 0 320 400" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="160" cy="38" r="5.5" fill="#d4af37"/>
         <circle cx="100" cy="58" r="5" fill="#d4af37"/>
         <circle cx="220" cy="58" r="5" fill="#d4af37"/>
@@ -85,65 +55,44 @@
         <circle cx="270" cy="80" r="4.5" fill="#d4af37"/>
         <circle cx="16" cy="106" r="4" fill="#d4af37"/>
         <circle cx="304" cy="106" r="4" fill="#d4af37"/>
-        <!-- Arms -->
-        <rect x="156.5" y="42" width="7" height="145" rx="3.5" fill="#d4af37" opacity="0.85"/>
-        <rect x="18" y="182" width="284" height="9" rx="4.5" fill="#d4af37" opacity="0.85"/>
-        <path d="M160 186 Q108 186 100 136 Q100 82 100 62" stroke="#d4af37" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.85"/>
-        <path d="M160 186 Q212 186 220 136 Q220 82 220 62" stroke="#d4af37" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.85"/>
-        <path d="M160 186 Q72 186 50 140 Q44 100 50 84" stroke="#d4af37" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.8"/>
-        <path d="M160 186 Q248 186 270 140 Q276 100 270 84" stroke="#d4af37" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.8"/>
-        <path d="M160 186 Q36 182 16 138 Q10 108 16 110" stroke="#d4af37" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.74"/>
-        <path d="M160 186 Q284 182 304 138 Q310 108 304 110" stroke="#d4af37" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.74"/>
-        <!-- Base -->
-        <path d="M114 298 L206 298 L220 322 H100 Z" fill="#d4af37" opacity="0.75"/>
-        <rect x="88" y="322" width="144" height="15" rx="6" fill="#d4af37" opacity="0.7"/>
+        <rect x="156.5" y="42" width="7" height="145" rx="3.5" fill="#d4af37" opacity="0.8"/>
+        <rect x="18" y="182" width="284" height="9" rx="4.5" fill="#d4af37" opacity="0.8"/>
+        <path d="M160 186 Q108 186 100 136 Q100 82 100 62" stroke="#d4af37" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.8"/>
+        <path d="M160 186 Q212 186 220 136 Q220 82 220 62" stroke="#d4af37" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.8"/>
+        <path d="M160 186 Q72 186 50 140 Q44 100 50 84" stroke="#d4af37" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.72"/>
+        <path d="M160 186 Q248 186 270 140 Q276 100 270 84" stroke="#d4af37" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.72"/>
+        <path d="M160 186 Q36 182 16 138 Q10 108 16 110" stroke="#d4af37" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.62"/>
+        <path d="M160 186 Q284 182 304 138 Q310 108 304 110" stroke="#d4af37" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.62"/>
+        <path d="M114 298 L206 298 L220 322 H100 Z" fill="#d4af37" opacity="0.65"/>
+        <rect x="88" y="322" width="144" height="15" rx="6" fill="#d4af37" opacity="0.6"/>
       </svg>
     </div>
 
     <div class="hero-content">
-      <div class="hero-badge animate-in">מזכרת בתיה • נוסח ספרד</div>
-      <h1 class="hero-title animate-in">
-        <span class="title-line1">בית כנסת</span>
-        <span class="title-line2">ישי</span>
+      <p class="hero-eyebrow">נוסח ספרד · מזכרת בתיה</p>
+      <h1 class="hero-title">
+        <span class="hero-title-sm">בית כנסת</span>
+        <span class="hero-title-lg">ישי</span>
       </h1>
-      <p class="hero-subtitle animate-in">קהילה חמה ומקבלת • תפילה ולימוד תורה</p>
-      <div class="hero-verse animate-in">
-        <div class="verse-text">מַה טֹּבוּ אֹהָלֶיךָ יַעֲקֹב מִשְׁכְּנֹתֶיךָ יִשְׂרָאֵל</div>
-        <div class="verse-src">במדבר כ"ד, ה'</div>
-      </div>
-      <div class="hero-cta animate-in">
-        <a href="#times" class="btn-gold">זמני תפילה</a>
-        <a href="#contact" class="btn-ghost">מיקום ויצירת קשר</a>
-      </div>
-    </div>
-
-    <div class="hero-scroll-hint">
-      <span>גלול למטה</span>
-      <div class="scroll-chevron"></div>
-    </div>
-
-    <!-- Floating stars -->
-    <div class="stars-field" aria-hidden="true">
-      <span class="star" style="--tx:8%;--ty:18%;--del:.4s;--sz:6px"></span>
-      <span class="star" style="--tx:88%;--ty:12%;--del:1.1s;--sz:4px"></span>
-      <span class="star" style="--tx:60%;--ty:78%;--del:.7s;--sz:5px"></span>
-      <span class="star" style="--tx:24%;--ty:65%;--del:1.6s;--sz:3px"></span>
-      <span class="star" style="--tx:92%;--ty:55%;--del:.2s;--sz:4px"></span>
-      <span class="star" style="--tx:40%;--ty:88%;--del:2.1s;--sz:5px"></span>
-      <span class="star" style="--tx:74%;--ty:32%;--del:.9s;--sz:3px"></span>
-      <span class="star" style="--tx:15%;--ty:42%;--del:1.4s;--sz:4px"></span>
-      <span class="star" style="--tx:52%;--ty:22%;--del:.6s;--sz:6px"></span>
+      <div class="hero-rule"></div>
+      <blockquote class="hero-verse">
+        <p>מַה טֹּבוּ אֹהָלֶיךָ יַעֲקֹב מִשְׁכְּנֹתֶיךָ יִשְׂרָאֵל</p>
+        <cite>במדבר כ"ד, ה'</cite>
+      </blockquote>
+      <nav class="hero-nav">
+        <a href="#times">זמני תפילה ←</a>
+        <a href="#contact" class="secondary">מיקום ←</a>
+      </nav>
     </div>
   </section>
 
   <!-- PRAYER TIMES -->
   <section class="section-times" id="times">
     <div class="container">
-      <div class="sec-header">
-        <span class="sec-icon">🕊️</span>
+      <header class="sec-header">
+        <p class="sec-label">לוח שבועי</p>
         <h2>זמני תפילה</h2>
-        <p>לוח זמנים שבועי לכל התפילות</p>
-      </div>
+      </header>
 
       <div class="live-date-bar" id="liveDateBar"></div>
 
@@ -155,115 +104,176 @@
 
       <!-- Weekday -->
       <div class="tab-panel active" id="panel-weekday">
-        <div class="times-grid3">
-          <div class="tcard gold-top">
-            <div class="tcard-emoji">🌅</div>
-            <h3>שחרית</h3>
-            <ul class="tlist">
-              <li><span>א'–ו' (רגיל)</span><strong>06:30</strong></li>
-              <li><span>שישי (ערב שבת)</span><strong>06:15</strong></li>
-              <li class="hl"><span>מניין נץ החמה</span><strong id="netzTime">לפי זריחה</strong></li>
-            </ul>
+        <div class="schedule-table">
+          <div class="sch-row">
+            <div class="sch-name">שחרית</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">ראשון – חמישי</span>
+                <span class="sch-time">06:20</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">יום שישי</span>
+                <span class="sch-time">06:45</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">מניין נץ החמה</span>
+                <span class="sch-time" id="netzTime">לפי זריחה</span>
+              </div>
+            </div>
           </div>
-          <div class="tcard blue-top">
-            <div class="tcard-emoji">🌇</div>
-            <h3>מנחה</h3>
-            <ul class="tlist">
-              <li class="hl"><span>מנחה גדולה</span><strong>12:30</strong></li>
-              <li><span>מנחה סמוך לשקיעה</span><strong id="minchaEvening">לפי שקיעה</strong></li>
-            </ul>
+          <div class="sch-divider"></div>
+          <div class="sch-row">
+            <div class="sch-name">מנחה</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">מנחה גדולה</span>
+                <span class="sch-time">12:30</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">מנחה קטנה</span>
+                <span class="sch-time">17:30</span>
+              </div>
+            </div>
           </div>
-          <div class="tcard navy-top">
-            <div class="tcard-emoji">🌙</div>
-            <h3>ערבית</h3>
-            <ul class="tlist">
-              <li class="hl"><span>אחרי צאת הכוכבים</span><strong id="arvitTime">לפי שקיעה</strong></li>
-              <li><span>ערבית מאוחרת</span><strong>21:00</strong></li>
-            </ul>
+          <div class="sch-divider"></div>
+          <div class="sch-row">
+            <div class="sch-name">ערבית</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">מניין א׳</span>
+                <span class="sch-time">18:00</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">מניין ב׳</span>
+                <span class="sch-time">19:00</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">מניין ג׳ (מאוחר)</span>
+                <span class="sch-time">22:00</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Shabbat -->
       <div class="tab-panel" id="panel-shabbat">
-        <div class="shabbat-top-bar">
-          <span>🕯️</span>
+        <div class="shabbat-banner">
           <div>
             <strong>שבת שלום ומבורך</strong>
-            <p id="shabbatParasha">פרשת השבוע</p>
+            <span id="shabbatParasha"></span>
           </div>
-          <span>🕯️</span>
+          <div class="shabbat-zmanim">
+            <span>כניסת שבת: <strong id="shabEntry">–</strong></span>
+            <span>מוצאי שבת: <strong id="shabExit">–</strong></span>
+          </div>
         </div>
-        <div class="times-grid3">
-          <div class="tcard gold-top">
-            <div class="tcard-emoji">✨</div>
-            <h3>קבלת שבת</h3>
-            <ul class="tlist">
-              <li><span>כניסת שבת</span><strong id="shabEntry">לפי לוח</strong></li>
-              <li class="hl"><span>מנחה + קבלת שבת</span><strong>18 דק' לפני כניסה</strong></li>
-              <li><span>קבלת שבת שירה</span><strong>כרגיל</strong></li>
-            </ul>
+        <div class="schedule-table">
+          <div class="sch-row">
+            <div class="sch-name">קבלת שבת</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">מנחה + קבלת שבת</span>
+                <span class="sch-time">18 דק׳ לפני הכניסה</span>
+              </div>
+            </div>
           </div>
-          <div class="tcard blue-top">
-            <div class="tcard-emoji">🌅</div>
-            <h3>שחרית שבת</h3>
-            <ul class="tlist">
-              <li class="hl"><span>שחרית</span><strong>08:00</strong></li>
-              <li><span>קריאת התורה</span><strong>~09:15</strong></li>
-              <li><span>מוסף</span><strong>~10:00</strong></li>
-              <li><span>שיעור תורה לאחר מוסף</span><strong>~11:00</strong></li>
-            </ul>
+          <div class="sch-divider"></div>
+          <div class="sch-row">
+            <div class="sch-name">שחרית שבת</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">שחרית</span>
+                <span class="sch-time">08:00</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">קריאת התורה</span>
+                <span class="sch-time">~09:15</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">מוסף</span>
+                <span class="sch-time">~10:00</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">שיעור תורה</span>
+                <span class="sch-time">~11:00</span>
+              </div>
+            </div>
           </div>
-          <div class="tcard navy-top">
-            <div class="tcard-emoji">🌇</div>
-            <h3>מנחה ומוצ"ש</h3>
-            <ul class="tlist">
-              <li><span>שיעור לפני מנחה</span><strong>30 דק' קודם</strong></li>
-              <li class="hl"><span>מנחה שבת</span><strong>45 דק' לפני שקיעה</strong></li>
-              <li><span>מוצאי שבת</span><strong id="shabExit">לפי לוח</strong></li>
-              <li><span>הבדלה</span><strong>אחרי ערבית</strong></li>
-            </ul>
+          <div class="sch-divider"></div>
+          <div class="sch-row">
+            <div class="sch-name">מנחה ומוצ"ש</div>
+            <div class="sch-entries">
+              <div class="sch-entry muted">
+                <span class="sch-sub">שיעור לפני מנחה</span>
+                <span class="sch-time">30 דק׳ קודם</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">מנחה שבת</span>
+                <span class="sch-time">45 דק׳ לפני שקיעה</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">הבדלה</span>
+                <span class="sch-time">אחרי ערבית</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Holidays -->
       <div class="tab-panel" id="panel-holidays">
-        <div class="times-grid3">
-          <div class="tcard gold-top">
-            <div class="tcard-emoji">🌙</div>
-            <h3>ראש חודש</h3>
-            <ul class="tlist">
-              <li class="hl"><span>שחרית עם הלל</span><strong>06:30</strong></li>
-              <li><span>מוסף ראש חודש</span><strong>אחרי שחרית</strong></li>
-            </ul>
+        <div class="schedule-table">
+          <div class="sch-row">
+            <div class="sch-name">ראש חודש</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">שחרית עם הלל</span>
+                <span class="sch-time">06:20</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">מוסף</span>
+                <span class="sch-time">אחרי שחרית</span>
+              </div>
+            </div>
           </div>
-          <div class="tcard blue-top">
-            <div class="tcard-emoji">🍎</div>
-            <h3>ימים נוראים</h3>
-            <ul class="tlist">
-              <li><span>ראש השנה שחרית</span><strong>07:30</strong></li>
-              <li><span>מוסף ר"ה</span><strong>~09:30</strong></li>
-              <li class="hl"><span>יום כיפורים שחרית</span><strong>07:30</strong></li>
-              <li><span>נעילה</span><strong>לפני שקיעה</strong></li>
-              <li><span>ערבית (צאת הצום)</span><strong>לפי לוח</strong></li>
-            </ul>
+          <div class="sch-divider"></div>
+          <div class="sch-row">
+            <div class="sch-name">ימים נוראים</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">ראש השנה שחרית</span>
+                <span class="sch-time">07:30</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">יום כיפורים שחרית</span>
+                <span class="sch-time">07:30</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">נעילה</span>
+                <span class="sch-time">לפני שקיעה</span>
+              </div>
+            </div>
           </div>
-          <div class="tcard navy-top">
-            <div class="tcard-emoji">🍋</div>
-            <h3>שלוש רגלים</h3>
-            <ul class="tlist">
-              <li><span>פסח / שבועות / סוכות</span><strong>07:30</strong></li>
-              <li class="hl"><span>מוסף יום טוב</span><strong>אחרי שחרית</strong></li>
-              <li><span>מנחה יו"ט</span><strong>לפי שקיעה</strong></li>
-            </ul>
+          <div class="sch-divider"></div>
+          <div class="sch-row">
+            <div class="sch-name">שלוש רגלים</div>
+            <div class="sch-entries">
+              <div class="sch-entry">
+                <span class="sch-sub">פסח · שבועות · סוכות</span>
+                <span class="sch-time">07:30</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">מוסף יום טוב</span>
+                <span class="sch-time">אחרי שחרית</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <p class="times-disclaimer">
-        ✦ זמני התפילה עשויים להשתנות לפי עונות השנה ואירועים מיוחדים. לבדיקת זמנים מדויקים פנו לגבאי.
-      </p>
+      <p class="times-disclaimer">הזמנים עשויים להשתנות לפי עונות השנה. לבדיקת זמנים מדויקים פנו לגבאי.</p>
     </div>
   </section>
 
@@ -271,7 +281,6 @@
   <section class="section-about" id="about">
     <div class="container">
       <div class="about-layout">
-        <!-- Visual artwork side -->
         <div class="about-art-col">
           <div class="stained-glass">
             <svg viewBox="0 0 280 360" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -281,57 +290,38 @@
                   <stop offset="100%" stop-color="#162048"/>
                 </linearGradient>
                 <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3"/>
+                  <stop offset="0%" stop-color="#ffd700" stop-opacity="0.25"/>
                   <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
                 </radialGradient>
               </defs>
-              <!-- Arch window -->
-              <path d="M20 360 L20 110 Q20 10 140 10 Q260 10 260 110 L260 360 Z" fill="url(#bg1)" stroke="#d4af37" stroke-width="3"/>
-              <!-- Inner arch glow -->
-              <path d="M38 355 L38 118 Q38 38 140 38 Q242 38 242 118 L242 355 Z" fill="rgba(21,42,95,0.6)" stroke="#d4af37" stroke-width="1.5" stroke-opacity="0.5"/>
-              <!-- Ner Tamid lamp -->
-              <circle cx="140" cy="62" r="14" fill="rgba(255,215,0,0.15)"/>
-              <circle cx="140" cy="62" r="7" fill="rgba(255,215,0,0.5)"/>
-              <circle cx="140" cy="62" r="3.5" fill="#ffd700"/>
-              <path d="M140 52 Q137 44 140 38 Q143 44 140 52Z" fill="#ffaa00"/>
-              <!-- Star of David -->
+              <path d="M20 360 L20 110 Q20 10 140 10 Q260 10 260 110 L260 360 Z" fill="url(#bg1)" stroke="#b8962e" stroke-width="2.5"/>
+              <path d="M38 355 L38 118 Q38 38 140 38 Q242 38 242 118 L242 355 Z" fill="rgba(21,42,95,0.5)" stroke="#b8962e" stroke-width="1" stroke-opacity="0.4"/>
+              <circle cx="140" cy="62" r="12" fill="rgba(255,215,0,0.12)"/>
+              <circle cx="140" cy="62" r="5.5" fill="rgba(255,215,0,0.4)"/>
+              <circle cx="140" cy="62" r="2.5" fill="#ffd700"/>
+              <path d="M140 52 Q137 44 140 39 Q143 44 140 52Z" fill="#ffaa00"/>
               <g transform="translate(140,155)">
-                <circle cx="0" cy="0" r="55" fill="url(#starGlow)"/>
-                <!-- Triangle up -->
-                <path d="M0,-48 L41.6,24 L-41.6,24 Z" stroke="#d4af37" stroke-width="3" fill="rgba(212,175,55,0.08)"/>
-                <!-- Triangle down -->
-                <path d="M0,48 L-41.6,-24 L41.6,-24 Z" stroke="#d4af37" stroke-width="3" fill="rgba(212,175,55,0.08)"/>
-                <!-- Center hexagon dot -->
-                <circle cx="0" cy="0" r="6" fill="#d4af37" opacity="0.6"/>
-                <!-- 6 outer dots -->
-                <circle cx="0" cy="-36" r="3" fill="#d4af37" opacity="0.5"/>
-                <circle cx="31" cy="-18" r="3" fill="#d4af37" opacity="0.5"/>
-                <circle cx="31" cy="18" r="3" fill="#d4af37" opacity="0.5"/>
-                <circle cx="0" cy="36" r="3" fill="#d4af37" opacity="0.5"/>
-                <circle cx="-31" cy="18" r="3" fill="#d4af37" opacity="0.5"/>
-                <circle cx="-31" cy="-18" r="3" fill="#d4af37" opacity="0.5"/>
+                <circle cx="0" cy="0" r="52" fill="url(#starGlow)"/>
+                <path d="M0,-46 L39.8,23 L-39.8,23 Z" stroke="#b8962e" stroke-width="2.5" fill="rgba(184,150,46,0.06)"/>
+                <path d="M0,46 L-39.8,-23 L39.8,-23 Z" stroke="#b8962e" stroke-width="2.5" fill="rgba(184,150,46,0.06)"/>
+                <circle cx="0" cy="0" r="5" fill="#b8962e" opacity="0.5"/>
               </g>
-              <!-- Text ornament -->
-              <text x="140" y="290" text-anchor="middle" fill="#d4af37" font-size="13" font-family="serif" opacity="0.85">בית כנסת ישי</text>
-              <text x="140" y="310" text-anchor="middle" fill="#d4af37" font-size="10" font-family="serif" opacity="0.6">מזכרת בתיה</text>
-              <!-- Decorative bottom scrollwork -->
-              <path d="M60 330 Q100 318 140 330 Q180 318 220 330" stroke="#d4af37" stroke-width="1.5" fill="none" opacity="0.5"/>
-              <path d="M80 340 Q110 332 140 340 Q170 332 200 340" stroke="#d4af37" stroke-width="1" fill="none" opacity="0.35"/>
+              <text x="140" y="292" text-anchor="middle" fill="#b8962e" font-size="12" font-family="serif" opacity="0.8">בית כנסת ישי</text>
+              <text x="140" y="311" text-anchor="middle" fill="#b8962e" font-size="9.5" font-family="serif" opacity="0.5">מזכרת בתיה</text>
+              <path d="M65 332 Q100 322 140 332 Q180 322 215 332" stroke="#b8962e" stroke-width="1.2" fill="none" opacity="0.4"/>
             </svg>
           </div>
         </div>
 
-        <!-- Text side -->
         <div class="about-text-col">
-          <div class="sec-header align-start">
-            <span class="sec-icon">🏛️</span>
+          <header class="sec-header align-start">
+            <p class="sec-label">קהילה וזהות</p>
             <h2>אודות בית הכנסת</h2>
-            <p>קהילה חיה ומקבלת בלב מזכרת בתיה</p>
-          </div>
+          </header>
           <div class="about-paragraphs">
             <p class="lead-p">
               בית כנסת ישי הוא קהילה ספרדית חמה ופעילה, השוכנת ברחוב יעקב גולד במזכרת בתיה –
-              אחד היישובים ההיסטוריים הראשונים בארץ ישראל החדשה, שנוסד ב-1883.
+              אחד היישובים ההיסטוריים הראשונים בארץ ישראל, שנוסד ב-1883.
             </p>
             <p>
               הקהילה מתפללת בנוסח ספרד ומחזיקה אווירה משפחתית ומקבלת. כל אחד מוזמן
@@ -339,39 +329,39 @@
             </p>
             <p>
               בבית הכנסת מתקיימים שיעורי תורה שוטפים, לימוד דף יומי, שיעור פרשת השבוע
-              ושיעורי הלכה למעשה. אנו שמחים לקבל כל אחד – קבוע ומזדמן כאחד.
+              ושיעורי הלכה למעשה.
             </p>
           </div>
-          <div class="about-features-grid">
-            <div class="af-item">
-              <span class="af-icon">📿</span>
+          <ul class="about-pillars">
+            <li>
+              <span class="pillar-mark">—</span>
               <div>
                 <strong>נוסח ספרד</strong>
                 <span>מסורת ספרדית אותנטית</span>
               </div>
-            </div>
-            <div class="af-item">
-              <span class="af-icon">📚</span>
+            </li>
+            <li>
+              <span class="pillar-mark">—</span>
               <div>
                 <strong>שיעורי תורה</strong>
                 <span>לימוד שוטף כל ימות השנה</span>
               </div>
-            </div>
-            <div class="af-item">
-              <span class="af-icon">🤝</span>
+            </li>
+            <li>
+              <span class="pillar-mark">—</span>
               <div>
                 <strong>קהילה מקבלת</strong>
                 <span>אווירה חמה ומשפחתית</span>
               </div>
-            </div>
-            <div class="af-item">
-              <span class="af-icon">🎊</span>
+            </li>
+            <li>
+              <span class="pillar-mark">—</span>
               <div>
                 <strong>אירועי קהילה</strong>
                 <span>פעילות לאורך כל השנה</span>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -379,174 +369,163 @@
 
   <!-- ROLES -->
   <section class="section-roles" id="roles">
-    <div class="roles-bg-deco" aria-hidden="true">
-      <span>✡</span><span>✡</span><span>✡</span>
-    </div>
     <div class="container">
-      <div class="sec-header">
-        <span class="sec-icon">👑</span>
+      <header class="sec-header">
+        <p class="sec-label">מבנה הקהילה</p>
         <h2>בעלי תפקידים</h2>
-        <p>האנשים העומדים בראש קהילתנו</p>
+      </header>
+
+      <div class="roles-list">
+        <div class="role-item featured">
+          <div class="role-meta">
+            <span class="role-title">מרא דאתרא</span>
+            <h3>הרב</h3>
+          </div>
+          <div class="role-sep"></div>
+          <div class="role-desc">
+            <p>פסיקת הלכה, הדרכה רוחנית לקהילה ושיעורי תורה שבועיים</p>
+            <div class="role-tags">
+              <span>פסיקת הלכה</span>
+              <span>שיעורי תורה</span>
+              <span>הדרכה</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-meta">
+            <span class="role-title">גבאי ראשי</span>
+            <h3>הגבאי</h3>
+          </div>
+          <div class="role-sep"></div>
+          <div class="role-desc">
+            <p>עליות לתורה, סדרי התפילה, תיאום אירועים ותחזוקת בית הכנסת</p>
+            <div class="role-tags">
+              <span>עליות לתורה</span>
+              <span>ניהול</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-meta">
+            <span class="role-title">שליח ציבור</span>
+            <h3>החזן</h3>
+          </div>
+          <div class="role-sep"></div>
+          <div class="role-desc">
+            <p>ניהול התפילה בנוסח ספרד, קריאת התורה ותפילות חגים ומועדים</p>
+            <div class="role-tags">
+              <span>תפילה</span>
+              <span>קריאת התורה</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-meta">
+            <span class="role-title">פעילות נוער</span>
+            <h3>מניין הנוער</h3>
+          </div>
+          <div class="role-sep"></div>
+          <div class="role-desc">
+            <p>מניין נוער בשבתות, שיעורים לצעירים ופעילות קהילתית לגיל הצעיר</p>
+            <div class="role-tags">
+              <span>מניין נוער</span>
+              <span>שיעורים</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="roles-grid">
-        <div class="rcard featured">
-          <div class="rcard-top">
-            <div class="rcard-avatar rav">רב</div>
-            <div class="rcard-badge">מרא דאתרא</div>
-          </div>
-          <h3>הרב</h3>
-          <p class="rcard-title">רב הקהילה</p>
-          <p class="rcard-desc">פסיקת הלכה, הדרכה רוחנית לקהילה ושיעורי תורה שבועיים</p>
-          <div class="rcard-tags">
-            <span>פסיקת הלכה</span>
-            <span>שיעורי תורה</span>
-            <span>הדרכה</span>
-          </div>
-        </div>
-
-        <div class="rcard">
-          <div class="rcard-top">
-            <div class="rcard-avatar gabai">גב'</div>
-            <div class="rcard-badge">גבאי ראשי</div>
-          </div>
-          <h3>הגבאי</h3>
-          <p class="rcard-title">ניהול בית הכנסת</p>
-          <p class="rcard-desc">עליות לתורה, סדרי התפילה, תיאום אירועים ותחזוקת בית הכנסת</p>
-          <div class="rcard-tags">
-            <span>עליות לתורה</span>
-            <span>ניהול</span>
-          </div>
-        </div>
-
-        <div class="rcard">
-          <div class="rcard-top">
-            <div class="rcard-avatar hazan">חז'</div>
-            <div class="rcard-badge">שליח ציבור</div>
-          </div>
-          <h3>החזן</h3>
-          <p class="rcard-title">שליח הציבור</p>
-          <p class="rcard-desc">ניהול התפילה בנוסח ספרד, קריאת התורה ותפילות חגים ומועדים</p>
-          <div class="rcard-tags">
-            <span>תפילה</span>
-            <span>קריאת התורה</span>
-          </div>
-        </div>
-
-        <div class="rcard">
-          <div class="rcard-top">
-            <div class="rcard-avatar youth">נוע'</div>
-            <div class="rcard-badge">פעילות נוער</div>
-          </div>
-          <h3>מניין הנוער</h3>
-          <p class="rcard-title">קהילת הצעירים</p>
-          <p class="rcard-desc">מניין נוער בשבתות, שיעורים לצעירים ופעילות קהילתית לגיל הצעיר</p>
-          <div class="rcard-tags">
-            <span>מניין נוער</span>
-            <span>שיעורים</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="roles-cta">
-        <p>לפרטים נוספים ויצירת קשר עם בעלי התפקידים ←
-          <a href="#contact">ראו דף יצירת קשר</a>
-        </p>
-      </div>
+      <p class="roles-cta">לפרטים ויצירת קשר ← <a href="#contact">ראו דף יצירת קשר</a></p>
     </div>
   </section>
 
   <!-- PARASHA -->
   <section class="section-parasha" id="parasha">
     <div class="container">
-      <div class="sec-header">
-        <span class="sec-icon">📜</span>
+      <header class="sec-header">
+        <p class="sec-label light">לוח שבועי</p>
         <h2>פרשת השבוע</h2>
-        <p>לימוד שבועי לכל הקהילה</p>
-      </div>
+      </header>
 
-      <div class="parasha-main-card">
-        <div class="parasha-card-header">
-          <div class="parasha-title-area">
-            <span class="parasha-label-pill">פרשת השבוע</span>
-            <h3 id="parashaName" class="parasha-big-name">טוען…</h3>
-            <span id="parashaBook" class="parasha-sefer"></span>
-          </div>
-          <div class="parasha-zmanim-area">
-            <div class="zman-row">
-              <span class="zman-label">🕯️ כניסת שבת</span>
-              <span class="zman-val" id="pCandleLight">–</span>
-            </div>
-            <div class="zman-row">
-              <span class="zman-label">✨ מוצאי שבת</span>
-              <span class="zman-val" id="pHavdalah">–</span>
-            </div>
-            <div class="zman-row">
-              <span class="zman-label">📅 תאריך עברי</span>
-              <span class="zman-val" id="pHebrewDate">–</span>
-            </div>
+      <div class="parasha-layout">
+        <div class="parasha-main">
+          <span class="parasha-eyebrow">פרשת השבוע</span>
+          <h3 id="parashaName" class="parasha-name">טוען…</h3>
+          <span id="parashaBook" class="parasha-sefer"></span>
+
+          <blockquote class="parasha-verse">
+            <p id="parashaVerse">טוען פסוק…</p>
+          </blockquote>
+
+          <div class="parasha-shiur-note">
+            שיעור פרשת השבוע — בכל שבת לאחר תפילת מוסף
           </div>
         </div>
 
-        <div class="parasha-body-area">
-          <div class="parasha-verse-block">
-            <span class="open-quote">❝</span>
-            <p id="parashaVerse">טוען פסוק מהפרשה…</p>
-            <span class="close-quote">❞</span>
+        <div class="parasha-sidebar">
+          <div class="zmanim-card">
+            <h4>זמני שבת</h4>
+            <div class="zman-row">
+              <span>הדלקת נרות</span>
+              <strong id="pCandleLight">–</strong>
+            </div>
+            <div class="zman-row">
+              <span>מוצאי שבת</span>
+              <strong id="pHavdalah">–</strong>
+            </div>
+            <div class="zman-row">
+              <span>תאריך עברי</span>
+              <strong id="pHebrewDate">–</strong>
+            </div>
           </div>
-          <div class="parasha-meta-row">
-            <div class="pmeta">
+
+          <div class="parasha-stats">
+            <div class="pstat">
               <span id="pPesukim">–</span>
               <label>פסוקים</label>
             </div>
-            <div class="pmeta">
+            <div class="pstat">
               <span>7</span>
               <label>עליות</label>
             </div>
-            <div class="pmeta">
+            <div class="pstat">
               <span id="pSefer">–</span>
               <label>ספר</label>
             </div>
           </div>
         </div>
-
-        <div class="parasha-shiur-promo">
-          <span>🕯️</span>
-          <div>
-            <strong>שיעור פרשת השבוע</strong>
-            <p>בכל שבת לאחר תפילת מוסף · הרב הקהילה · כניסה חופשית</p>
-          </div>
-          <span>🕯️</span>
-        </div>
       </div>
 
-      <!-- Weekly shiurim schedule -->
+      <!-- Weekly shiurim -->
       <div class="shiurim-section">
-        <h3>לוח שיעורים שבועי</h3>
-        <div class="shiurim-row">
-          <div class="shiur-block">
-            <div class="shiur-day-badge">א'</div>
+        <h4>לוח שיעורים שבועי</h4>
+        <div class="shiurim-grid">
+          <div class="shiur-item">
+            <span class="shiur-day">א׳</span>
             <div>
               <strong>דף יומי</strong>
               <span>21:00</span>
             </div>
           </div>
-          <div class="shiur-block">
-            <div class="shiur-day-badge">ג'</div>
+          <div class="shiur-item">
+            <span class="shiur-day">ג׳</span>
             <div>
               <strong>שיעור הלכה</strong>
               <span>21:00 · הלכות שבת</span>
             </div>
           </div>
-          <div class="shiur-block">
-            <div class="shiur-day-badge">ה'</div>
+          <div class="shiur-item">
+            <span class="shiur-day">ה׳</span>
             <div>
               <strong>פרשת שבוע</strong>
               <span>20:30 · לימוד מעמיק</span>
             </div>
           </div>
-          <div class="shiur-block featured">
-            <div class="shiur-day-badge gold">שבת</div>
+          <div class="shiur-item featured">
+            <span class="shiur-day">שבת</span>
             <div>
               <strong>שיעור שבת</strong>
               <span>לאחר מוסף · פרשת השבוע</span>
@@ -560,47 +539,36 @@
   <!-- CONTACT -->
   <section class="section-contact" id="contact">
     <div class="container">
-      <div class="sec-header">
-        <span class="sec-icon">📍</span>
+      <header class="sec-header">
+        <p class="sec-label">הגיעו אלינו</p>
         <h2>מיקום ויצירת קשר</h2>
-        <p>אנחנו כאן לכל שאלה ובקשה</p>
-      </div>
+      </header>
 
       <div class="contact-layout">
         <div class="contact-details">
-          <div class="cd-item">
-            <div class="cd-icon">📍</div>
-            <div class="cd-text">
-              <strong>כתובת</strong>
-              <span>רחוב יעקב גולד, מזכרת בתיה</span>
+          <dl class="contact-list">
+            <div class="cl-item">
+              <dt>כתובת</dt>
+              <dd>רחוב יעקב גולד, מזכרת בתיה</dd>
             </div>
-          </div>
-          <div class="cd-item">
-            <div class="cd-icon">🕐</div>
-            <div class="cd-text">
-              <strong>שעות פעילות</strong>
-              <span>שחרית, מנחה וערבית בכל יום</span>
+            <div class="cl-item">
+              <dt>שעות פעילות</dt>
+              <dd>שחרית, מנחה וערבית בכל יום</dd>
             </div>
-          </div>
-          <div class="cd-item">
-            <div class="cd-icon">📞</div>
-            <div class="cd-text">
-              <strong>טלפון</strong>
-              <span>פנו לגבאי לפרטים</span>
+            <div class="cl-item">
+              <dt>טלפון</dt>
+              <dd>פנו לגבאי לפרטים</dd>
             </div>
-          </div>
-          <div class="cd-item">
-            <div class="cd-icon">💬</div>
-            <div class="cd-text">
-              <strong>קבוצת וואטסאפ</strong>
-              <span>פנו לגבאי להצטרפות לקבוצת העדכונים</span>
+            <div class="cl-item">
+              <dt>ווצאפ קהילתי</dt>
+              <dd>פנו לגבאי להצטרפות</dd>
             </div>
-          </div>
+          </dl>
 
           <a class="waze-btn"
              href="https://waze.com/ul?q=%D7%91%D7%99%D7%AA+%D7%9B%D7%A0%D7%A1%D7%AA+%D7%99%D7%A9%D7%99+%D7%9E%D7%96%D7%9B%D7%A8%D7%AA+%D7%91%D7%AA%D7%99%D7%94"
              target="_blank" rel="noopener noreferrer">
-            🗺️ &nbsp;נווט בוויז לבית הכנסת
+            נווט בוויז לבית הכנסת ←
           </a>
         </div>
 
@@ -611,7 +579,6 @@
             width="100%" height="100%"
             style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="map-label">📍 רח' יעקב גולד, מזכרת בתיה</div>
         </div>
       </div>
     </div>
@@ -621,16 +588,13 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="f-star">✡</span>
-        <div>
-          <h4>בית כנסת ישי</h4>
-          <p>מזכרת בתיה</p>
-        </div>
+        <strong>בית כנסת ישי</strong>
+        <span>מזכרת בתיה</span>
       </div>
-      <div class="footer-verse">
+      <blockquote class="footer-verse">
         <p>״כִּי בֵיתִי בֵּית תְּפִלָּה יִקָּרֵא לְכָל הָעַמִּים״</p>
-        <span>ישעיהו נ"ו, ז'</span>
-      </div>
+        <cite>ישעיהו נ"ו, ז'</cite>
+      </blockquote>
       <nav class="footer-nav">
         <a href="#home">בית</a>
         <a href="#times">זמני תפילה</a>
@@ -639,8 +603,8 @@
         <a href="#contact">צור קשר</a>
       </nav>
     </div>
-    <div class="footer-bottom-bar">
-      <p>© 2025 בית כנסת ישי, מזכרת בתיה &nbsp;·&nbsp; שנה טובה ומבורכת לכל בית ישראל</p>
+    <div class="footer-bottom">
+      <p>© 2025 בית כנסת ישי, מזכרת בתיה</p>
     </div>
   </footer>
 
