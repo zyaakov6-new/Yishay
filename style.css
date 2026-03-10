@@ -523,7 +523,7 @@ img { display: block; max-width: 100%; }
 
 .roles-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -594,6 +594,21 @@ img { display: block; max-width: 100%; }
   color: #7a5c00;
   background: rgba(184,150,46,.06);
 }
+
+.role-phone {
+  display: inline-block;
+  margin-top: .7rem;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--navy);
+  direction: ltr;
+  border-bottom: 1px solid rgba(13,27,62,.25);
+  padding-bottom: 1px;
+  transition: color .2s, border-color .2s;
+}
+.role-phone:hover { color: var(--gold); border-color: var(--gold); }
+.role-item.featured .role-phone { color: #5a4400; border-color: rgba(90,68,0,.3); }
+.role-item.featured .role-phone:hover { color: var(--gold); border-color: var(--gold); }
 
 .roles-cta {
   text-align: center;
@@ -938,7 +953,7 @@ img { display: block; max-width: 100%; }
   .about-layout         { grid-template-columns: 1fr; gap: 3rem; }
   .about-art-col        { position: static; display: flex; justify-content: center; }
   .stained-glass        { max-width: 220px; }
-  .roles-list           { grid-template-columns: 1fr 1fr; }
+  .roles-list           { grid-template-columns: 1fr; }
   .shiurim-grid         { grid-template-columns: 1fr 1fr; }
   .parasha-layout       { grid-template-columns: 1fr; }
   .parasha-stats        { grid-template-columns: repeat(3, 1fr); max-width: 240px; }
