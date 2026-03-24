@@ -109,16 +109,28 @@
             <div class="sch-name">שחרית</div>
             <div class="sch-entries">
               <div class="sch-entry">
-                <span class="sch-sub">ראשון – חמישי</span>
+                <span class="sch-sub">בית כנסת א׳–ד׳</span>
                 <span class="sch-time">06:20</span>
               </div>
               <div class="sch-entry">
-                <span class="sch-sub">יום שישי</span>
+                <span class="sch-sub">בית כנסת יום ה׳</span>
                 <span class="sch-time">06:45</span>
               </div>
+              <div class="sch-entry">
+                <span class="sch-sub">בית כנסת (מאוחר)</span>
+                <span class="sch-time">08:15</span>
+              </div>
               <div class="sch-entry muted">
-                <span class="sch-sub">מניין נץ החמה</span>
-                <span class="sch-time" id="netzTime">לפי זריחה</span>
+                <span class="sch-sub">בית מדרש א׳,ג׳,ד׳</span>
+                <span class="sch-time">06:00</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">בית מדרש ב׳,ה׳</span>
+                <span class="sch-time">05:50</span>
+              </div>
+              <div class="sch-entry muted">
+                <span class="sch-sub">בית מדרש יום ו׳</span>
+                <span class="sch-time">06:30</span>
               </div>
             </div>
           </div>
@@ -128,11 +140,11 @@
             <div class="sch-entries">
               <div class="sch-entry">
                 <span class="sch-sub">מנחה גדולה</span>
-                <span class="sch-time">12:30</span>
+                <span class="sch-time">13:20</span>
               </div>
               <div class="sch-entry">
                 <span class="sch-sub">מנחה קטנה</span>
-                <span class="sch-time">17:30</span>
+                <span class="sch-time">17:45</span>
               </div>
             </div>
           </div>
@@ -142,14 +154,18 @@
             <div class="sch-entries">
               <div class="sch-entry">
                 <span class="sch-sub">מניין א׳</span>
-                <span class="sch-time">18:00</span>
+                <span class="sch-time">18:15</span>
               </div>
               <div class="sch-entry">
                 <span class="sch-sub">מניין ב׳</span>
-                <span class="sch-time">19:00</span>
+                <span class="sch-time">19:10</span>
               </div>
               <div class="sch-entry">
-                <span class="sch-sub">מניין ג׳ (מאוחר)</span>
+                <span class="sch-sub">מניין ג׳</span>
+                <span class="sch-time">21:00</span>
+              </div>
+              <div class="sch-entry">
+                <span class="sch-sub">מניין ד׳ (מאוחר)</span>
                 <span class="sch-time">22:00</span>
               </div>
             </div>
@@ -161,63 +177,77 @@
       <div class="tab-panel" id="panel-shabbat">
         <div class="shabbat-banner">
           <div>
-            <strong>שבת שלום ומבורך</strong>
-            <span id="shabbatParasha"></span>
+            <strong>שבת שלום ומבורך · פרשת ויקרא</strong>
+            <span>ב–ח ניסן תשפ"ו · 20–26 במרץ</span>
           </div>
           <div class="shabbat-zmanim">
-            <span>כניסת שבת: <strong id="shabEntry">–</strong></span>
-            <span>מוצאי שבת: <strong id="shabExit">–</strong></span>
+            <span>כניסת שבת: <strong>17:33</strong></span>
+            <span>צאת שבת: <strong>18:29</strong></span>
+            <span>ר"ת: <strong>19:08</strong></span>
           </div>
         </div>
-        <div class="schedule-table">
-          <div class="sch-row">
-            <div class="sch-name">קבלת שבת</div>
-            <div class="sch-entries">
-              <div class="sch-entry">
-                <span class="sch-sub">מנחה + קבלת שבת</span>
-                <span class="sch-time">18 דק׳ לפני הכניסה</span>
-              </div>
-            </div>
+
+        <div class="shab-timetable">
+          <div class="shab-section-hdr">ערב שבת — שישי</div>
+
+          <div class="shab-row">
+            <span class="shab-time">12:45</span>
+            <span class="shab-desc">מנחה</span>
           </div>
-          <div class="sch-divider"></div>
-          <div class="sch-row">
-            <div class="sch-name">שחרית שבת</div>
-            <div class="sch-entries">
-              <div class="sch-entry">
-                <span class="sch-sub">שחרית</span>
-                <span class="sch-time">08:00</span>
-              </div>
-              <div class="sch-entry muted">
-                <span class="sch-sub">קריאת התורה</span>
-                <span class="sch-time">~09:15</span>
-              </div>
-              <div class="sch-entry muted">
-                <span class="sch-sub">מוסף</span>
-                <span class="sch-time">~10:00</span>
-              </div>
-              <div class="sch-entry muted">
-                <span class="sch-sub">שיעור תורה</span>
-                <span class="sch-time">~11:00</span>
-              </div>
-            </div>
+          <div class="shab-row">
+            <span class="shab-time">17:33</span>
+            <span class="shab-desc">מנחה בבית המדרש</span>
           </div>
-          <div class="sch-divider"></div>
-          <div class="sch-row">
-            <div class="sch-name">מנחה ומוצ"ש</div>
-            <div class="sch-entries">
-              <div class="sch-entry muted">
-                <span class="sch-sub">שיעור לפני מנחה</span>
-                <span class="sch-time">30 דק׳ קודם</span>
-              </div>
-              <div class="sch-entry">
-                <span class="sch-sub">מנחה שבת</span>
-                <span class="sch-time">45 דק׳ לפני שקיעה</span>
-              </div>
-              <div class="sch-entry">
-                <span class="sch-sub">הבדלה</span>
-                <span class="sch-time">אחרי ערבית</span>
-              </div>
-            </div>
+          <div class="shab-row accent">
+            <span class="shab-time">17:35</span>
+            <span class="shab-desc">מנחה, שיר השירים וקבלת שבת</span>
+          </div>
+
+          <div class="shab-section-hdr">שבת</div>
+
+          <div class="shab-row dim">
+            <span class="shab-time">05:09</span>
+            <span class="shab-desc">שחרית בנץ</span>
+          </div>
+          <div class="shab-row">
+            <span class="shab-time">07:00</span>
+            <span class="shab-desc">דף יומי בכולל</span>
+          </div>
+          <div class="shab-row accent">
+            <span class="shab-time">07:45</span>
+            <span class="shab-desc">שחרית קריאת</span>
+          </div>
+          <div class="shab-row">
+            <span class="shab-time">12:45</span>
+            <span class="shab-desc">מנחה גדולה</span>
+          </div>
+          <div class="shab-row">
+            <span class="shab-time">15:00</span>
+            <span class="shab-desc">תהילים לילדים</span>
+          </div>
+          <div class="shab-row dim">
+            <span class="shab-time">15:50</span>
+            <span class="shab-desc">דף יומי — בבית מדרש</span>
+          </div>
+          <div class="shab-row">
+            <span class="shab-time">15:55</span>
+            <span class="shab-desc">שיעור במסכת פסחים</span>
+          </div>
+          <div class="shab-row accent">
+            <span class="shab-time">16:50</span>
+            <span class="shab-desc">מנחה של שבת</span>
+          </div>
+          <div class="shab-row">
+            <span class="shab-time">17:20</span>
+            <span class="shab-desc">סעודה שלישית וישיח בפרשת שבוע</span>
+          </div>
+          <div class="shab-row">
+            <span class="shab-time">18:23</span>
+            <span class="shab-desc">מזמורים</span>
+          </div>
+          <div class="shab-row accent">
+            <span class="shab-time">18:30</span>
+            <span class="shab-desc">ערבית של מוצאי שבת</span>
           </div>
         </div>
       </div>

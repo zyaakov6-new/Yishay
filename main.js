@@ -66,9 +66,9 @@ function updateLiveDateBar() {
   const hint = document.getElementById('todayPrayerHint');
   if (hint) {
     const day = now.getDay();
-    if (day === 6) hint.textContent = 'שבת שלום — שחרית שבת 08:00';
-    else if (day === 5) hint.textContent = 'שישי — שחרית 06:45 · קבלת שבת בערב';
-    else hint.textContent = 'שחרית 06:20 · מנחה גדולה 12:30 · מנחה קטנה 17:30 · ערבית 18:00 / 19:00 / 22:00';
+    if (day === 6) hint.textContent = 'שבת שלום — שחרית 07:45 · מנחה 16:50 · ערבית 18:30';
+    else if (day === 5) hint.textContent = 'שישי — שחרית 06:45 (בית כנסת) · 06:30 (בית מדרש) · קבלת שבת 17:35';
+    else hint.textContent = 'שחרית 06:20 (בית כנסת) · מנחה 13:20 / 17:45 · ערבית 18:15 / 19:10 / 21:00 / 22:00';
   }
 }
 updateLiveDateBar();

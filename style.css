@@ -426,6 +426,62 @@ img { display: block; max-width: 100%; }
 .shabbat-zmanim span { font-size: .82rem; color: rgba(255,255,255,.6); }
 .shabbat-zmanim strong { color: var(--gold-lt); font-size: .9rem; margin-right: .4rem; }
 
+/* Shabbat timetable */
+.shab-timetable {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--white);
+}
+
+.shab-section-hdr {
+  background: var(--navy);
+  color: rgba(255,255,255,.7);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .55rem 1.6rem;
+}
+
+.shab-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1.8rem;
+  padding: .65rem 1.6rem;
+  border-bottom: 1px solid var(--border);
+  transition: background .15s;
+}
+.shab-row:last-child { border-bottom: none; }
+.shab-row:hover { background: var(--surface); }
+
+.shab-row.accent {
+  background: #faf6e8;
+}
+.shab-row.accent:hover { background: #f5f0d8; }
+
+.shab-row.dim .shab-time,
+.shab-row.dim .shab-desc { opacity: .5; }
+
+.shab-time {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+  min-width: 46px;
+  flex-shrink: 0;
+  direction: ltr;
+  text-align: left;
+}
+.shab-row.accent .shab-time { color: #7a5c00; }
+
+.shab-desc {
+  font-size: .93rem;
+  color: var(--ink-mid);
+  line-height: 1.4;
+}
+.shab-row.accent .shab-desc { color: var(--ink); font-weight: 500; }
+
 .times-disclaimer {
   margin-top: 1.8rem;
   text-align: center;
